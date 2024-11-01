@@ -17,12 +17,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="search" class="search-form-button" />
         </form>
@@ -30,7 +31,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-app-city">Nairobi</h1>
+            <h1 class="weather-app-city" id="city-input">Nairobi</h1>
             <p class="weather-app-details">
               Tuesday 14:49pm scattered clouds
               <br />
@@ -48,6 +49,7 @@
         <a href="#">open sourced on Github</a> and,
         <a href="#">hosted on Vercel</a>
       </footer>
+      <script src="src/app.js"></script>
     </div>
   </body>
 </html>
